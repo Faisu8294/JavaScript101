@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+    <style>
+        .LIS1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="this-class">this is class </div>
+    <div class="this-class">this is class </div>
+    <div class="this-class">this is class </div>
+    <div class="this-class">this is class </div>
+
+
+    <ol>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ol>
+    <script>
+        // let elem =document.querySelectorAll("li");
+        // // console.log(elem);
+        // // elem.innerText="dssdsdd";
+        // elem.forEach((element,index)  => {
+        //     element.innerText = `Hey, this is li ${index}`;
+        // });
+
+        let a=document.querySelectorAll(".this-class");
+        a.innerHTML =a.forEach((element,index)=>{
+            element.innerHTML =`this is div ${index+1}`;
+
+        });
+        let b=document.querySelectorAll("li");
+        b.forEach((element, index)=>{
+            element.innerHTML =`this is div ${index+1}`;
+        });
+
+        c=document.querySelectorAll("li");
+        c.forEach(element => {
+            element.classList.add("LIS1", "Li2");
+        });
+
+
+        function addNumer(prem1, prem2){
+            const  a= prem1+prem2;
+            return a;
+
+        }
+
+        let c= addNumer(5,5);
+        console.log(c);
+
+//         c.forEach(element => {
+//     element.classList.add("Li1", "Li2");
+// });
+
+
+    </script>
+</body>
+</html>

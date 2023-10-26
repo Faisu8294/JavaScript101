@@ -25,15 +25,53 @@
         // else {
         //     console.log("You are not adult");
         // }
+// Added by AHsan
 
 
-        let person={
-    name: Faisal,
-    job: Student,
-    Age:20,
-    marks:90%
+
+
+// Till here
+
+//         let person={
+//     name: Faisal,
+//     job: Student,
+//     Age:20,
+//     marks:90%
+
+//     speak: funct(){
+//       console.log("this is fuctio");
+// }
+// }
+// console.log(person.Age); // Corrected the property name to "Age"
+// person['favFood'] = "pizza"; // Enclosed the property name "favFood" in quotes
+// console.log(person.favFood);
+// person.speak(); // Corrected the method call
+
+
+
+const obj = {
+    name: "Faisal",
+    profession: "Programmer",
+    str: "String",
+    num: 10,
+    bool: true,
+    speak: function(voice="meao") { // corrected the 'funct' to 'function'
+        console.log(`my voice is ${voice}`);
+    },
+
+    talk(){
+console.log("i am talkig");
+
+}
 };
-console.log(person.age);
+
+obj['favFood'] = "pizza";
+console.log(obj['num']);
+console.log(obj['favFood']);
+
+obj.speak();
+obj.speak("good");
+obj.talk();
     </script>
 
 
